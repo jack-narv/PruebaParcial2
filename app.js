@@ -13,8 +13,9 @@ function enviar(){
     ordenarOracion(oracion, " ");
 }
 function dividirCadena(oracion, separador){
- var array = oracion.split(separador);
+ var array = oracion.trim().split(separador);
    document.write('<p>La oracion original es: "' + oracion + '"');
+   document.write("<br>El numero de palabras es: " + array.length);
    document.write("<br>La primera palabra es: " + array[0]);
    document.write("<br>La ultima palabra es: " + array[array.length - 1]);
 
